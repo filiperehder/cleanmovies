@@ -1,4 +1,4 @@
-package frog.cleanmovies.domain.interactor
+package frog.cleanmovies.domain.usecase
 
 import frog.cleanmovies.domain.executor.PostExecutionThread
 import frog.cleanmovies.domain.executor.ThreadExecutor

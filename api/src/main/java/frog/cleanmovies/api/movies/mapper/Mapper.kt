@@ -13,7 +13,6 @@ fun DiscoverMovieResponse.toDiscoverMovieList() : List<MovieEntity> = results.ma
 
 fun DiscoverMovieResponse.toDiscoverMovie() : DiscoverMovieEntity = DiscoverMovieEntity(results = results.map { it.toMovieEntity() })
 
-
 fun MovieModel.toMovieEntity() = MovieEntity(id, vote_average, title, genre_ids, backdrop_path, overview, release_date, poster_path)
 
 fun DiscoverMovieRequest.toDiscoverMovieRequestEntity() = DiscoverMovieRequestEntity(language, sort_by, include_adult, page, year)
