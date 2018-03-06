@@ -1,4 +1,4 @@
-package frog.cleanmovies.api.model
+package frog.cleanmovies.api.movies.model
 
 data class MovieModel (val id: Int,
                        val vote_average: Double,

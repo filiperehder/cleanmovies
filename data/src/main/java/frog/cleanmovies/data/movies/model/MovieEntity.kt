@@ -1,8 +1,4 @@
-package frog.cleanmovies.data.model
-
-/**
- * Created by Filipe Rehder on 05/03/2018.
- */
+package frog.cleanmovies.data.movies.model
 data class MovieEntity (val id: Int,
                         val vote_average: Double,
                         val title : String,

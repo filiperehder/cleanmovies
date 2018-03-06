@@ -1,4 +1,4 @@
-package frog.cleanmovies.api.model
+package frog.cleanmovies.api.movies.model
 
 data class DiscoverMovieRequest(val language : String,
                                 val sort_by : String,
