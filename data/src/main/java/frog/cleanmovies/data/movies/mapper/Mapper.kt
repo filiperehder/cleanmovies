@@ -8,6 +8,6 @@ import frog.cleanmovies.domain.movies.model.MovieRequest
 
 fun MovieRequest.toDiscoverMovieRequestEntity() : DiscoverMovieRequestEntity = DiscoverMovieRequestEntity(language, sort_by, include_adult, page, year)
 
-fun MovieEntity.toMovieEntity() : MovieItem = MovieItem(id, vote_average, title, genre_ids, backdrop_path, overview, release_date, poster_path)
+fun MovieEntity.toMovieItem() : MovieItem = MovieItem(id, vote_average, title, genre_ids, backdrop_path, overview, release_date, poster_path)
 
-fun DiscoverMovieEntity.toMovieList() : List<MovieItem> = results.map { it.toMovieEntity() }
+fun DiscoverMovieEntity.toMovieItemList() : List<MovieItem> = results.map { it.toMovieItem() }
